@@ -52,11 +52,10 @@ El diseño de Neotravel es responsive, adaptándose a diferentes tamaños de
 pantalla mediante el uso de `media queries` y una estructura de CSS que permite
 una navegación fluida en dispositivos móviles.
 
-## 🔗 Versión Online y Código
+## 🔗 Versión Online
 
 Puedes acceder a sitio web en el siguiente enlace:
-[NeoTravel.com](https://neotravel-master.netlify.app/) y cosultar el codigo
-completo en [GitHub.neotravel](https://github.com/MarioRivVal/proyecto_1_master)
+[NeoTravel.com](https://neotravel-master.netlify.app/)
 
 ## 🎉 Conclusión
 

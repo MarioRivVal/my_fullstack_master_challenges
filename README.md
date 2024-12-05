@@ -16,6 +16,8 @@ distintas tecnologías.
    - Pagina Web de una agencia de viajes "netneo travels"
 3. [JavaScript Basico](/ejercicios_basicos_js_modulo_4/)
    - Ejercicios para poner en practica los fundamentos basicos de JavaScript
+4. [Funciones y Bucles](/ejercicios_bucles_funciones_modulo_5/)
+   - Creación de funciones mas avanzadas jusnto a bucles ``for``
 
 _(Más proyectos y desafíos se agregarán a medida que avance el curso)_
 
