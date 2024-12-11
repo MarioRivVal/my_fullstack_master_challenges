@@ -3,7 +3,8 @@
 Este repositorio contiene una colección de proyectos y desafíos realizados
 durante mi máster en desarrollo fullstack. Cada carpeta incluye el código
 fuente, documentación y cualquier material relacionado con los desafíos
-abordados. Este espacio es una forma de mostrar mi progreso y habilidades en
+abordados. Cada ejercicio contiene su solución y otra más compleja para desafiarme a mi mismo.
+Este espacio es una forma de mostrar mi progreso y habilidades en
 distintas tecnologías.
 
 ---
@@ -17,7 +18,9 @@ distintas tecnologías.
 3. [JavaScript Basico](/ejercicios_basicos_js_modulo_4/)
    - Ejercicios para poner en practica los fundamentos basicos de JavaScript
 4. [Funciones y Bucles](/ejercicios_bucles_funciones_modulo_5/)
-   - Creación de funciones mas avanzadas jusnto a bucles ``for``
+   - Creación de funciones mas avanzadas junto a bucles ``for``
+4. [Funciones Avanzadas](/ejercicios_avanzados_modulo_6/)
+   - Ejercios de funciones con metodos mas avanzados
 
 _(Más proyectos y desafíos se agregarán a medida que avance el curso)_
 
