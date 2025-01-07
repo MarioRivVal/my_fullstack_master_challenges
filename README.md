@@ -20,7 +20,9 @@ distintas tecnologías.
 4. [Funciones y Bucles](/ejercicios_bucles_funciones_modulo_5/)
    - Creación de funciones mas avanzadas junto a bucles ``for``
 4. [Funciones Avanzadas](/ejercicios_avanzados_modulo_6/)
-   - Ejercios de funciones con metodos mas avanzados
+   - Ejercicios de funciones con metodos mas avanzados
+5. [Introducción al DOM](/06_ejercicios_dom.js/)
+   - Practicando la manipulación del DOM
 
 _(Más proyectos y desafíos se agregarán a medida que avance el curso)_
 
