@@ -11,18 +11,20 @@ distintas tecnologías.
 
 ## 📑 Índice de Proyectos
 
-1. [Arquitectura de la información](/html_arquitectura_informacion_modulo_1/)
+1. [Arquitectura de la información](/01_html_arquitectura_informacion_modulo_1/)
    - Arquitectura basica de un documento HTML.
-2. [Flex-box y GRID](/css_grid_flexbox_netneo_travel/)
+2. [Flex-box y GRID](/02_css_grid_flexbox_netneo_travel/)
    - Pagina Web de una agencia de viajes "netneo travels"
-3. [JavaScript Basico](/ejercicios_basicos_js_modulo_4/)
+3. [JavaScript Basico](/03_ejercicios_basicos_js_modulo_4/)
    - Ejercicios para poner en practica los fundamentos basicos de JavaScript
-4. [Funciones y Bucles](/ejercicios_bucles_funciones_modulo_5/)
+4. [Funciones y Bucles](/04_ejercicios_bucles_funciones_modulo_5/)
    - Creación de funciones mas avanzadas junto a bucles ``for``
-4. [Funciones Avanzadas](/ejercicios_avanzados_modulo_6/)
+4. [Funciones Avanzadas](/05_ejercicios_avanzados_modulo_6/)
    - Ejercicios de funciones con metodos mas avanzados
 5. [Introducción al DOM](/06_ejercicios_dom.js/)
    - Practicando la manipulación del DOM
+6. [Practica DOM](/07_practica_DOM/)
+   - Pagina Web "netneo travels" creada dinamicamente manipulando el DOM.
 
 _(Más proyectos y desafíos se agregarán a medida que avance el curso)_
 

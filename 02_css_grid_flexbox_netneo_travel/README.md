@@ -64,8 +64,6 @@ estándares de desarrollo web actuales. Gracias a su diseño simple pero efectiv
 es una excelente práctica para reforzar habilidades en HTML y CSS y el uso de
 flex-box y grid, así como para aprender buenas prácticas de optimización y SEO.
 
-¡Espero que te guste este proyecto!
-
 ## 🏅 Mis contactos
 
 [![LinkedIn](https://img.shields.io/badge/-LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/mario-valverde-web-developer/)
