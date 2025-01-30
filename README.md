@@ -11,6 +11,7 @@ distintas tecnologías.
 
 ## 📑 Índice de Proyectos
 
+### Retos para el Master Desarrollo Apliaciones Web
 1. [Arquitectura de la información](/01_html_arquitectura_informacion_modulo_1/)
    - Arquitectura basica de un documento HTML.
 2. [Flex-box y GRID](/02_css_grid_flexbox_netneo_travel/)
@@ -25,6 +26,8 @@ distintas tecnologías.
    - Practicando la manipulación del DOM
 6. [Practica DOM](/07_practica_DOM/)
    - Pagina Web "netneo travels" creada dinamicamente manipulando el DOM.
+6. [Portfolio Vite](/08_portfolio_vite/)
+   - Portfolio construido usando Vite y enfocado en el utilizo de componentes.
 
 _(Más proyectos y desafíos se agregarán a medida que avance el curso)_
 
@@ -34,6 +37,8 @@ _(Más proyectos y desafíos se agregarán a medida que avance el curso)_
 
 1. [Portfolio Personal. HTML CSS (Lenguaje de Marcas)](/FP_practica_1_portfolio_personal/)
    - Pagina web basica para uso de portfolio de proyectos personales.
+   
+   _(Más proyectos y desafíos se agregarán a medida que avance el curso)_
 
 ## 🎯 Propósito del Repositorio
 
