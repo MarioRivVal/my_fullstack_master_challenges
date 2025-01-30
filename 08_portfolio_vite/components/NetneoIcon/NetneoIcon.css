@@ -1,0 +1,11 @@
+.icon-wrapper {
+  width: 10%;
+  background-color: var(--bg-light);
+  border-radius: 100%;
+}
+
+.icon-wrapper .icon {
+  width: 100%;
+  height: auto;
+  display: block;
+}

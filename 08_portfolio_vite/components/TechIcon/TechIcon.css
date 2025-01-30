@@ -1,0 +1,10 @@
+.project-card > .detail > .techs {
+  display: flex;
+  gap: 1rem;
+}
+.project-card > .detail > .techs img{
+  width: 10%;
+  height: auto;
+  display: block;
+  object-fit: contain;
+}

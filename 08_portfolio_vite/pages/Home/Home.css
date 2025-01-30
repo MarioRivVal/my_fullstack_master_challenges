@@ -1,0 +1,46 @@
+.home {
+  position: relative;
+  padding: 8rem;
+  display: flex;
+  align-items: flex-start;
+  gap: 3rem;
+}
+
+.home__main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 3rem;
+}
+.home__curveline-icon {
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: scale(-1);
+  z-index: -1;
+}
+
+@media (max-width: 770px) {
+  .home {
+    padding: 2rem;
+  }
+}
+@media (max-width: 480px) {
+  .home__curveline-icon {
+    top: 12%;
+    transform: scale(-2);
+  }
+}
+
+.home__main > h1 {
+  font-size: 5.5rem;
+  background: linear-gradient(to right, #9845e8 0%, #33d2ff 50%, #dd5789 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.home__main > a {
+  font-size: 1.2rem;
+}
