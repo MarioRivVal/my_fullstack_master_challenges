@@ -20,14 +20,16 @@ distintas tecnologías.
    - Ejercicios para poner en practica los fundamentos basicos de JavaScript
 4. [Funciones y Bucles](/04_ejercicios_bucles_funciones_modulo_5/)
    - Creación de funciones mas avanzadas junto a bucles ``for``
-4. [Funciones Avanzadas](/05_ejercicios_avanzados_modulo_6/)
+5. [Funciones Avanzadas](/05_ejercicios_avanzados_modulo_6/)
    - Ejercicios de funciones con metodos mas avanzados
-5. [Introducción al DOM](/06_ejercicios_dom.js/)
+6. [Introducción al DOM](/06_ejercicios_dom.js/)
    - Practicando la manipulación del DOM
-6. [Practica DOM](/07_practica_DOM/)
+7. [Practica DOM](/07_practica_DOM/)
    - Pagina Web "netneo travels" creada dinamicamente manipulando el DOM.
-6. [Portfolio Vite](/08_portfolio_vite/)
+8. [Portfolio Vite](/08_portfolio_vite/)
    - Portfolio construido usando Vite y enfocado en el utilizo de componentes.
+9. [Metodos es6](/09_ejercicios_es6_js/)
+   - Metodos como `.map()` `.filter()` y otros. Spread y Rest operators
 
 _(Más proyectos y desafíos se agregarán a medida que avance el curso)_
 
