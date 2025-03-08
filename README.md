@@ -1,17 +1,19 @@
 # 🖥️ Proyectos y Desafíos del Máster en Desarrollo Fullstack
 
 Este repositorio contiene una colección de proyectos y desafíos realizados
-durante mi máster en desarrollo fullstack y el FP en Desarrollo de Aplicaciones Multiplataforma. Cada carpeta incluye el código
-fuente, documentación y cualquier material relacionado con los desafíos
-abordados. Algunos ejercicio contiene su solución y otra más compleja para desafiarme a mi mismo.
-Este espacio es una forma de mostrar mi progreso y habilidades en
-distintas tecnologías.
+durante mi máster en desarrollo fullstack y el FP en Desarrollo de Aplicaciones
+Multiplataforma. Cada carpeta incluye el código fuente, documentación y
+cualquier material relacionado con los desafíos abordados. Algunos ejercicio
+contiene su solución y otra más compleja para desafiarme a mi mismo. Este
+espacio es una forma de mostrar mi progreso y habilidades en distintas
+tecnologías.
 
 ---
 
 ## 📑 Índice de Proyectos
 
 ### Retos para el Master Desarrollo Apliaciones Web
+
 1. [Arquitectura de la información](/01_html_arquitectura_informacion_modulo_1/)
    - Arquitectura basica de un documento HTML.
 2. [Flex-box y GRID](/02_css_grid_flexbox_netneo_travel/)
@@ -19,7 +21,7 @@ distintas tecnologías.
 3. [JavaScript Basico](/03_ejercicios_basicos_js_modulo_4/)
    - Ejercicios para poner en practica los fundamentos basicos de JavaScript
 4. [Funciones y Bucles](/04_ejercicios_bucles_funciones_modulo_5/)
-   - Creación de funciones mas avanzadas junto a bucles ``for``
+   - Creación de funciones mas avanzadas junto a bucles `for`
 5. [Funciones Avanzadas](/05_ejercicios_avanzados_modulo_6/)
    - Ejercicios de funciones con metodos mas avanzados
 6. [Introducción al DOM](/06_ejercicios_dom.js/)
@@ -30,6 +32,9 @@ distintas tecnologías.
    - Portfolio construido usando Vite y enfocado en el utilizo de componentes.
 9. [Metodos es6](/09_ejercicios_es6_js/)
    - Metodos como `.map()` `.filter()` y otros. Spread y Rest operators
+10. [Asincronia](/10_ejercicios_async_js/)
+
+- Llamada a `API` con Promesas, Fetch y Asíncronia y el utilizo de Try/Catch
 
 _(Más proyectos y desafíos se agregarán a medida que avance el curso)_
 
@@ -38,8 +43,9 @@ _(Más proyectos y desafíos se agregarán a medida que avance el curso)_
 ### Retos para el FP de DAM
 
 1. [Portfolio Personal. HTML CSS (Lenguaje de Marcas)](/FP_practica_1_portfolio_personal/)
+
    - Pagina web basica para uso de portfolio de proyectos personales.
-   
+
    _(Más proyectos y desafíos se agregarán a medida que avance el curso)_
 
 ## 🎯 Propósito del Repositorio
