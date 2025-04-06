@@ -1,0 +1,28 @@
+.btn {
+  background-color: transparent;
+  color: var(--white-c);
+  font-family: inherit;
+  border: 0.1rem solid var(--white-c);
+  border-radius: var(--rounded-1);
+  padding: 1rem 4rem;
+  font-size: 2.2rem;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+}
+
+.btn:hover {
+  background-color: var(--white-c);
+  color: var(--black-c);
+  box-shadow: 0 0 0.5rem rgba(255, 255, 255, 0.3);
+}
+
+body.light-theme .btn {
+  color: var(--black-c);
+  border-color: var(--black-c);
+}
+
+body.light-theme .btn:hover {
+  background-color: var(--black-c);
+  color: var(--white-c);
+  box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.3);
+}

@@ -1,0 +1,4 @@
+.img-box {
+  border-radius: var(--rounded-2);
+  overflow: hidden;
+}
