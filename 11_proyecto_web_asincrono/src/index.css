@@ -35,9 +35,11 @@ html {
 
 h1,
 h2,
-p {
+h3,
+p,
+a {
   font-weight: 200;
-  color: inherit;
+  text-transform: uppercase;
 }
 
 img {
@@ -54,7 +56,7 @@ button {
 }
 
 #app {
-  max-width: 150rem;
+  max-width: 130rem;
   margin: 0 auto;
 }
 
@@ -67,6 +69,11 @@ button {
   font-size: 7rem;
 }
 
+.tertiary-title {
+  font-size: 2.4rem;
+  margin-bottom: 1rem;
+}
+
 a {
   text-decoration: none;
   cursor: pointer;
@@ -77,35 +84,12 @@ a {
   height: 3rem;
 }
 
+.section {
+  margin-top: 5rem;
+}
+
 .mode-box {
   display: flex;
   gap: 2rem;
   align-items: center;
-}
-
-.sliders {
-  width: 100%;
-  overflow: hidden;
-}
-
-.sliders-track {
-  width: fit-content;
-  height: 100%;
-  display: flex;
-  gap: 2rem;
-  align-items: center;
-  transition: transform 0.3s ease-in-out;
-  transform: translateX(0);
-}
-
-.slider {
-  display: grid;
-  width: 150rem;
-  height: 100%;
-  gap: 2rem;
-  flex-shrink: 0;
-}
-
-.slider-vertical--5 {
-  grid-template-columns: repeat(5, 1fr);
 }

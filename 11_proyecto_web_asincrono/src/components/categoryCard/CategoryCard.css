@@ -1,0 +1,23 @@
+/* Estilos para cada tarjeta */
+.categories_card {
+  position: relative;
+  background: #f9f9f9;
+  border-radius: var(--rounded-1);
+  overflow: hidden;
+  text-align: center;
+  transition: transform 0.3s ease;
+  height: 12rem;
+  cursor: pointer;
+}
+
+.categories_card-category {
+  position: absolute;
+  bottom: 1rem;
+  width: 100%;
+  padding: 0.5rem 0;
+  background-color: rgba(26, 26, 26, 0.75);
+}
+.categories_card-category p {
+  font-size: 2rem;
+  color: var(--white-c);
+}

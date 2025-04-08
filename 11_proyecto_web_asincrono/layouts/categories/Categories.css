@@ -1,0 +1,14 @@
+.categories_box {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(2, auto);
+  gap: 2rem;
+  padding: 1rem;
+}
+
+@media (max-width: 1024px) {
+  .categories_box {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    grid-template-rows: auto;
+  }
+}

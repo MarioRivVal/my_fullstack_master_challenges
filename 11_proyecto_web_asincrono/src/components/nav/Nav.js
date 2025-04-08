@@ -7,22 +7,22 @@ import { Button } from "../button/Button";
 export const Nav = () => `
         <nav class="nav">
             <a id="homelink">
-            <p class="logo"><span>create</span><span>it</span></p>
+            <p class="logo"><span>find</span><span>it</span></p>
             </a>
             <div class="search-container">
-                <div class="search-icon">
+                <button class="icon-box" id="searchBtn">
                     ${searchIcon()}
-                </div>
+                </button>
+               
                 <input type="text" class="search-input" placeholder="BUSCA...">
-                <button class="filter-button">
-                    <div class="filter-icon">
+                <button class="icon-box" id="filterBtn"> 
                     ${filterIcon()}
-                    </div>
                 </button>
             </div>
             <div class="mode-box">
                 ${Button("favlink", "favoritos")}
-                ${sunIcon()}
+                <button class="icon-box" id="themeBtn">
+                </button>
             </div>
         </nav>
 `;

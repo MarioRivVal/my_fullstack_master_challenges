@@ -9,15 +9,10 @@
 .logo {
   font-size: 5rem;
   font-weight: 200;
-  text-transform: uppercase;
 }
 
 .logo > span:first-child {
   color: var(--red-c);
-}
-
-.logo > span:nth-child(2) {
-  color: var(--white-c);
 }
 
 .search-container {
@@ -29,6 +24,7 @@
   gap: 2rem;
   align-items: center;
   padding-left: 1rem;
+  box-shadow: 0px 0px 10px var(--gray-light-c);
 }
 
 .search-input {
@@ -37,7 +33,7 @@
   outline: none;
   font-size: 1.8rem;
   background-color: transparent;
-  color: inherit;
+  color: var(--black-c);
   font-family: inherit;
 }
 
@@ -46,7 +42,7 @@
   opacity: 1;
 }
 
-.filter-button {
+#filterBtn {
   background-color: var(--red-c);
   border: none;
   padding: 1rem 1.5rem;

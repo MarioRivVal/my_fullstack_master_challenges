@@ -1,0 +1,37 @@
+.sliders {
+  width: 100%;
+  overflow: hidden;
+}
+
+.sliders-track {
+  width: fit-content;
+  height: 100%;
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  transition: transform 0.3s ease-in-out;
+  transform: translateX(0);
+}
+
+.slider {
+  display: grid;
+  width: 130rem;
+  height: 100%;
+  gap: 2rem;
+  flex-shrink: 0;
+}
+
+.slider-vertical--8 {
+  grid-template-columns: repeat(8, 1fr);
+}
+.slider-vertical--6 {
+  grid-template-columns: repeat(6, 1fr);
+}
+.slider-horizontal--4 {
+  grid-template-columns: repeat(4, 1fr);
+  height: 24rem;
+}
+.slider-horizontal--5 {
+  grid-template-columns: repeat(5, 1fr);
+  height: 24rem;
+}
