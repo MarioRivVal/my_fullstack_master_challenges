@@ -9,8 +9,11 @@
   --gray-light-c: #abb7c2;
   --rounded-1: 1rem;
   --rounded-2: 2rem;
-  --shadow-light-b: rgba(26, 26, 26, 0.514);
+  --shadow-light-b: rgba(26, 26, 26, 0.5);
   --shadow-hard-b: rgba(26, 26, 26, 0.8);
+  --slider-w: 20rem;
+  --slider-h: 100%;
+  --quantity: 18;
 }
 
 * {
@@ -22,6 +25,7 @@ body {
   background-color: var(--bg-dark);
   font-family: "Oswald", sans-serif;
   color: var(--bg-light);
+  position: relative;
 }
 
 .light-theme {
@@ -41,12 +45,16 @@ a {
   font-weight: 200;
   text-transform: uppercase;
 }
+picture {
+  display: contents;
+}
 
 img {
   width: 100%;
   height: 100%;
   display: block;
   object-fit: cover;
+  transition: transform 0.3s;
 }
 
 button {
@@ -61,12 +69,12 @@ button {
 }
 
 .primary-title {
-  font-size: 9.4rem;
+  font-size: 2em;
   margin-top: -4rem;
 }
 
 .secondary-title {
-  font-size: 7rem;
+  font-size: 1em;
 }
 
 .tertiary-title {
@@ -85,11 +93,34 @@ a {
 }
 
 .section {
-  margin-top: 5rem;
+  padding: 0 2rem;
 }
 
 .mode-box {
   display: flex;
   gap: 2rem;
   align-items: center;
+}
+
+.alert-message {
+  text-align: center;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+}
+
+@media only screen and (max-width: 992px) {
+  html {
+    font-size: 50%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  html {
+    font-size: 47.5%;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .primary-title {
+    margin-top: -3rem;
+  }
 }

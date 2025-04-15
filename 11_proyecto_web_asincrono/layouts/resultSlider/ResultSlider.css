@@ -1,0 +1,64 @@
+.result__box {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  gap: 2rem;
+}
+
+.result__img {
+  position: relative;
+  width: 100%;
+  border-radius: var(--rounded-2);
+  overflow: hidden;
+  flex: 1;
+  max-height: 30rem;
+  opacity: 0;
+  filter: blur(10px);
+  transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  transition-duration: 1s;
+  transition-delay: calc(0.2s * var(--i));
+  transform: translateY(100%);
+}
+
+.result__img:hover img {
+  transform: scale(1.03);
+}
+
+#downloadBtn {
+  position: absolute;
+  display: flex;
+  width: 4rem;
+  height: 4rem;
+  bottom: -30%;
+  right: 5%;
+  background-color: var(--red-c);
+  border-radius: var(--rounded-2);
+  padding: 0.6rem;
+  transition: bottom 0.3s;
+}
+
+.result__img:hover #downloadBtn {
+  bottom: 5%;
+}
+
+.show {
+  transform: translateY(0);
+  opacity: 1;
+  filter: blur(0);
+}
+
+@media only screen and (max-width: 768px) {
+  .result__img {
+    min-width: 30%;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .result__img {
+    min-width: 35%;
+  }
+}
+@media only screen and (max-width: 370px) {
+  .result__img {
+    min-width: 50%;
+  }
+}

@@ -8,6 +8,10 @@
   padding: 2rem;
 }
 
+.home__title {
+  font-size: 4.5rem;
+}
+
 .home_banner {
   display: flex;
   justify-content: space-between;
@@ -17,4 +21,10 @@
 
 .primary-title > span:first-child {
   color: var(--red-c);
+}
+
+@media only screen and (max-width: 480px) {
+  .home__title {
+    font-size: 3.5rem;
+  }
 }

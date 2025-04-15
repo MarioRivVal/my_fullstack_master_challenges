@@ -1,5 +1,5 @@
 .icon.sun-icon,
-.icon.moon-icon {
+.icon.moon-icon .icon.download-icon {
   width: 4rem;
   height: 4rem;
 }

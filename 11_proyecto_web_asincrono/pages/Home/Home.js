@@ -3,21 +3,23 @@ import { Landing } from "../Landing/Landing";
 import { Button } from "../../src/components/button/Button";
 import { linkPage } from "../../utils/linkPage";
 import { changeTheme } from "../../utils/changeTheme";
-import { Slider } from "../../layouts/slider/Slider";
+import { homeSlider } from "../../layouts/homeSlider/homeSlider";
+
+import { fetchImages, shuffleArray } from "../../src/services/api";
 
 export const Home = async () => {
   const main = document.querySelector("#main");
 
-  //   cleanPage(main);
+  // Realizar dos fetch separados de 18 imágenes cada uno
+  const group1 = await fetchImages(18, 1);
+  const group2 = await fetchImages(18, 2);
+
+  const groupA = shuffleArray(group1);
+  const groupB = shuffleArray(group2);
 
   main.innerHTML = `
     <section class="home">
-        <div class="sliders">
-            <div class="sliders-track">
-                ${await Slider(6, "vertical", 1)}
-            </div>
-        </div>
-       
+      ${homeSlider(groupA)} 
         <div class="home_banner">
             <div class="home__title">
                 <h2 class="secondary-title">imagine</h2>
@@ -29,12 +31,7 @@ export const Home = async () => {
                 </button>
             </div>
         </div>
-
-          <div class="sliders">
-            <div class="sliders-track">
-               ${await Slider(6, "vertical", 2)}
-            </div>
-        </div>
+         ${homeSlider(groupB, true)}
         
     </section>
 `;
