@@ -1,0 +1,59 @@
+{
+  "header": {
+    "email": "Falamos",
+    "profession": "Desenvolvedor web"
+  },
+  "main": {
+    "title": "Olá, eu sou o Mário! 👋🏽",
+    "intro": "Desenvolvedor de aplicações multiplataforma e páginas web dinâmicas com integração de IA, 3 anos de experiência a criar com paixão"
+  },
+  "education": {
+    "title": "educação",
+    "education_1": {
+      "certificate": "Formação profissional DAM",
+      "country": " / Espanha / ",
+      "description": "FP Oficial em Desenvolvimento de Aplicações Multiplataforma"
+    },
+    "education_2": {
+      "certificate": "Mestrado em Desenvolvimento Web Fullstack",
+      "country": " / Espanha / ",
+      "description": "Mestrado em Desenvolvimento Fullstack de Sites e Aplicações Web"
+    },
+    "education_3": {
+      "certificate": "Desenvolvimento de Aplicações com Tecnologias Web",
+      "country": " / Espanha / ",
+      "description": "Aplicações web, lado do cliente e lado do servidor 590 horas"
+    }
+  },
+  "experience": {
+    "title": "experiência",
+    "experience_1": {
+      "position": "Desenvolvedor Freelancer",
+      "year": " / Outubro de 2023 - Presente",
+      "description": "Criação e design de páginas web e aplicações, otimizando a funcionalidade e a experiência do utilizador em diversas plataformas."
+    },
+    "experience_2": {
+      "position": "chefe de entretenimento",
+      "description": "Coordenação e supervisão de atividades e eventos de entretenimento a bordo, garantindo experiências memoráveis ​​aos passageiros."
+    }
+  },
+  "skills": {
+    "title": "Competências",
+    "skill_1": "Design web",
+    "skill_3": "Resolução de problemas",
+    "skill_4": "Trabalho em equipa",
+    "skill_5": "Adaptabilidade",
+    "skill_6": "Liderança de equipa",
+    "skill_7": "Competências analíticas",
+    "skill_8": "Tenacidade",
+    "skill_9": "Comunicação",
+    "skill_10": "Determinado",
+    "skill_11": "Orientado para os detalhes"
+  },
+  "tools": {
+    "title": "Tools"
+  },
+  "footer": {
+    "text": "Design de uma fonte gratuita no Figma"
+  }
+}

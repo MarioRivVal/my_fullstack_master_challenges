@@ -25,28 +25,28 @@ tecnologías.
 5. [Funciones Avanzadas](/05_ejercicios_avanzados_modulo_6/)
    - Ejercicios de funciones con metodos mas avanzados
 6. [Introducción al DOM](/06_ejercicios_dom.js/)
-   - Practicando la manipulación del DOM
+   - Practicando la manipulación del `DOM`
 7. [Practica DOM](/07_practica_DOM/)
-   - Pagina Web "netneo travels" creada dinamicamente manipulando el DOM.
+   - Pagina Web "netneo travels" creada dinamicamente manipulando el `DOM`.
 8. [Portfolio Vite](/08_portfolio_vite/)
    - Portfolio construido usando Vite y enfocado en el utilizo de componentes.
 9. [Metodos es6](/09_ejercicios_es6_js/)
    - Metodos como `.map()` `.filter()` y otros. Spread y Rest operators
 10. [Asincronia](/10_ejercicios_async_js/)
 
-- Llamada a `API` con Promesas, Fetch y Asíncronia y el utilizo de Try/Catch
+- Llamada a `API` con `Promesas`, `Fetch` y Asíncronia y el utilizo de
+  `Try/Catch`
+
+11. [Proyecto Web Asincrono](/11_proyecto_web_asincrono/)
+
+- Proyecto web completo con peticiones a la `API` de Unsplash, y emular las
+  funcionalidades de Pinterest.
+
+12. [Proyecto Web Componentes](/12_proyecto_web_components_typescript/)
+
+- Creación dinamica de todos los componentes HTML, creado con `TypeScript`
 
 _(Más proyectos y desafíos se agregarán a medida que avance el curso)_
-
----
-
-### Retos para el FP de DAM
-
-1. [Portfolio Personal. HTML CSS (Lenguaje de Marcas)](/FP_practica_1_portfolio_personal/)
-
-   - Pagina web basica para uso de portfolio de proyectos personales.
-
-   _(Más proyectos y desafíos se agregarán a medida que avance el curso)_
 
 ## 🎯 Propósito del Repositorio
 

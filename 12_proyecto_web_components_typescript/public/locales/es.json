@@ -1,0 +1,59 @@
+{
+  "header": {
+    "email": "Conectamos",
+    "profession": "Desarrollador Web"
+  },
+  "main": {
+    "title": "Hola, Soy Mario! 👋🏽",
+    "intro": "Desarrollador de aplicaciones multiplataforma y paginas web dinamicas con integracíon de IA, 3 años de experiencia creando con pasión"
+  },
+  "education": {
+    "title": "educación",
+    "education_1": {
+      "certificate": "Formación profesional DAM",
+      "country": " / España / ",
+      "description": "FP Oficial en Desarrollo de aplicaciones multiplataforma"
+    },
+    "education_2": {
+      "certificate": "Master Desarrollo Web Fullstack",
+      "country": " / España / ",
+      "description": " Master en Desarrollo Fullstack de Sitios y aplicaciones Web"
+    },
+    "education_3": {
+      "certificate": "Desarrollo Aplicaciones con Tecnologias Web",
+      "country": " / España / ",
+      "description": "Aplicaciones web, lado cliente y lado servidor 590 horas"
+    }
+  },
+  "experience": {
+    "title": "experiencia",
+    "experience_1": {
+      "position": "Desarrollador Autonomo",
+      "year": " / Octubre 2023 - Actualidad",
+      "description": "Creación y diseño de páginas y aplicaciones web, optimizando la funcionalidad y la experiencia del usuario en diversas plataformas."
+    },
+    "experience_2": {
+      "position": "Jefe de Actividades",
+      "description": "Coordinación y supervisión de actividades y eventos de entretenimiento a bordo, garantizando experiencias memorables para los pasajeros."
+    }
+  },
+  "skills": {
+    "title": "Habilidades",
+    "skill_1": "Diseño web",
+    "skill_3": "Resolución de problemas",
+    "skill_4": "Trabajo en equipo",
+    "skill_5": "Adaptabilidad",
+    "skill_6": "Liderazgo de equipo",
+    "skill_7": "Habilidades analíticas",
+    "skill_8": "Tenacidad",
+    "skill_9": "Comunicación",
+    "skill_10": "Determinado",
+    "skill_11": "Orientado al detalle"
+  },
+  "tools": {
+    "title": "Herramientas"
+  },
+  "footer": {
+    "text": "Diseño desde una fuente gratuita en Figma"
+  }
+}

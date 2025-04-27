@@ -1,0 +1,60 @@
+{
+  "header": {
+    "email": "Ne parliamo",
+    "profession": "Sviluppatore web"
+  },
+  "main": {
+    "title": "Ciao, Sono Mario! 👋🏽",
+    "intro": "Sviluppatore di app multipiattaforma e siti web dinamici con integrazione AI, 3 anni di esperienza nella creazione con passione"
+  },
+  "education": {
+    "title": "istruzione",
+    "education_1": {
+      "certificate": "Formazione professionale DAM",
+      "country": " / Spagna / ",
+      "description": "FP ufficiale nello sviluppo di applicazioni multipiattaforma"
+    },
+    "education_2": {
+      "certificate": "Master in Sviluppo Web Fullstack",
+      "country": " / Spagna / ",
+      "description": "Master in Sviluppo Fullstack di Siti Web e Applicazioni Web"
+    },
+    "education_3": {
+      "certificate": "Sviluppo di applicazioni con tecnologie Web",
+      "country": " / Spagna / ",
+      "description": "Applicazioni web, lato client e lato server 590 ore"
+    }
+  },
+  "experience": {
+    "title": "esperienza",
+    "experience_1": {
+      "position": "Sviluppatore freelance",
+      "year": " / Ottobre 2023 - Presente",
+      "description": "Creazione e progettazione di pagine web e applicazioni, ottimizzando la funzionalità e l'esperienza utente su diverse piattaforme."
+    },
+    "experience_2": {
+      "position": "Capo animazione",
+      "description": "Coordinamento e supervisione delle attività e degli eventi di intrattenimento a bordo, garantendo esperienze memorabili per i passeggeri"
+    }
+  },
+
+  "skills": {
+    "title": "Abilità",
+    "skill_1": "Progettazione web",
+    "skill_3": "Risoluzione dei problemi",
+    "skill_4": "Lavoro di squadra",
+    "skill_5": "Adattabilità",
+    "skill_6": "Leadership di squadra",
+    "skill_7": "Capacità analitiche",
+    "skill_8": "Tenacia",
+    "skill_9": "Comunicazione",
+    "skill_10": "Determinato",
+    "skill_11": "Orientato al dettaglio"
+  },
+  "tools": {
+    "title": "Utensili"
+  },
+  "footer": {
+    "text": "Design da un font gratuito in Figma"
+  }
+}

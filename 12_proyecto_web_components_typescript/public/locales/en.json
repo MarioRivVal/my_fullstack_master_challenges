@@ -1,0 +1,59 @@
+{
+  "header": {
+    "email": "get in touch",
+    "profession": "Fullstack Developer"
+  },
+  "main": {
+    "title": "Hello, I'm Mario! 👋🏽",
+    "intro": "Developer of multiplatform applications and dynamic web pages with AI integration, 3 years of experience creating with passion"
+  },
+  "education": {
+    "title": "education",
+    "education_1": {
+      "certificate": "DAM vocational training",
+      "country": " / Spain / ",
+      "description": "Official FP in Multiplatform Application Development"
+    },
+    "education_2": {
+      "certificate": "Master in Fullstack Web Development",
+      "country": " / Spain / ",
+      "description": "Master in Fullstack Development of Websites and Web Applications"
+    },
+    "education_3": {
+      "certificate": "Application Development with Web Technologies",
+      "country": " / Spain / ",
+      "description": "Web applications, client-side and server-side 590 hours"
+    }
+  },
+  "experience": {
+    "title": "experience",
+    "experience_1": {
+      "position": "Freelance Developer",
+      "year": " / October 2023 - Present",
+      "description": "Creation and design of web pages and applications, optimizing functionality and user experience across various platforms."
+    },
+    "experience_2": {
+      "position": "Chief Entertainer",
+      "description": "Coordination and supervision of onboard entertainment activities and events, ensuring memorable experiences for passengers."
+    }
+  },
+  "skills": {
+    "title": "Skills",
+    "skill_1": "Web design",
+    "skill_3": "Problem solving",
+    "skill_4": "Teamwork",
+    "skill_5": "Adaptability",
+    "skill_6": "Team leadership",
+    "skill_7": "Analytical skills",
+    "skill_8": "Tenacity",
+    "skill_9": "Communication",
+    "skill_10": "Determined",
+    "skill_11": "Detail-oriented"
+  },
+  "tools": {
+    "title": "Tools"
+  },
+  "footer": {
+    "text": "Design from a free font in Figma"
+  }
+}

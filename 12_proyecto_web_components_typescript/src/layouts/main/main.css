@@ -1,0 +1,26 @@
+.main {
+  display: grid;
+  gap: 1rem;
+  padding: 4rem 0;
+  border-top: solid 1px var(--color-gray-2);
+}
+
+#main__intro {
+  max-width: 68rem;
+}
+
+.main__lang-box {
+  display: flex;
+  padding: 2rem 0;
+  gap: 1rem;
+}
+
+.main__img {
+  width: 5rem;
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+
+.nav > a:not(:last-child) {
+  margin-right: 1rem;
+}
