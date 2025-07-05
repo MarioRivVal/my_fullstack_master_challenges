@@ -1,0 +1,95 @@
+.inputs-box {
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap-small);
+}
+
+input[type="text"],
+input[type="number"],
+input[type="password"] {
+  padding: 1.5rem 1.2rem;
+  width: 100%;
+  font-family: inherit;
+  border-radius: var(--round-small);
+  border: 1px solid var(--color-light-gray);
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus,
+input[type="password"]:focus {
+  outline: none;
+  border: 1px solid var(--color-main-blue);
+}
+
+input[type="text"]::placeholder {
+  color: var(--color-light-gray);
+}
+
+.transfer__input-group .input__amount {
+  width: 100%;
+  font-family: inherit;
+  border-radius: var(--round-small);
+  border: none;
+  font-size: 2.8rem;
+  font-weight: 600;
+  padding: 0 var(--padding-small);
+}
+
+.transfer__input-group .input__amount:focus {
+  outline: none;
+  border: none;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+}
+
+.input__amount:focus {
+  outline: none;
+}
+
+.input__amount::placeholder {
+  color: var(--color-dark);
+}
+
+.transfer__input-group {
+  width: 45%;
+  display: flex;
+  align-items: center;
+}
+
+select {
+  padding: 1.5rem 1.2rem;
+  width: 100%;
+  font-family: inherit;
+  border-radius: var(--round-small);
+  border: 1px solid var(--color-light-gray);
+  background-color: white;
+  appearance: none;
+  padding-right: 3rem;
+  background: white;
+  background-image: none;
+}
+
+select:focus {
+  outline: none;
+  border: 1px solid var(--color-main-blue);
+}
+
+select option {
+  font-family: inherit;
+}
+
+.select-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.select-icon {
+  position: absolute;
+  top: 50%;
+  right: 1rem;
+  transform: translateY(-50%);
+  pointer-events: none;
+}

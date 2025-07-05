@@ -1,0 +1,45 @@
+.credit-card {
+  position: relative;
+  width: 85%;
+  height: auto;
+}
+
+.credit-card-data {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap-medium);
+  padding: var(--padding-large);
+}
+
+.credit-card-details-box {
+  display: flex;
+  gap: var(--gap-medium);
+}
+.credit-card-img {
+  position: relative;
+}
+
+.credit-card-img::before, .credit-card-img::after {
+  content: "";
+  position: absolute;
+  height: 1rem;
+  right: 50%;
+  transform: translateX(50%);
+  border-radius: 10rem 10rem 0 0;
+}
+
+.credit-card-img::before {
+  width: 90%;
+  top: -1rem;
+  background-color: var(--color-orange);
+}
+
+.credit-card-img::after {
+  width: 80%;
+  top: -2rem;
+  background-color: var(--color-yellow);
+
+}

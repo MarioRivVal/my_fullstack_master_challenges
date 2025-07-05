@@ -1,0 +1,6 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  gap: var(--gap-medium);
+  align-self: flex-end;
+}
