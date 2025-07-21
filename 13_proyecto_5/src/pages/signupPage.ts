@@ -1,4 +1,4 @@
-import { TextInput } from "../components/inputs/TextInput";
+import { Input } from "../components/inputs/Input";
 import { Navbar } from "../components/nav/Navbar";
 import { Button } from "../components/button/Button";
 import { linkPage } from "../utils/linkPages";
@@ -18,13 +18,13 @@ export const signupPage = () => {
 
                     <form id="signup-form" class="form signup-form u-white-box u-width-100 u-gap-large">
                         <div class="inputs-box">
-                            ${TextInput({
+                            ${Input({
                               type: "text",
                               id: "username",
                               name: "username",
                               placeholder: "Username",
                             })}
-                            ${TextInput({
+                            ${Input({
                               type: "number",
                               id: "password",
                               name: "password",

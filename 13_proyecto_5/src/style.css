@@ -313,7 +313,7 @@ img {
 .u-gray-font {
   color: var(--color-dark-gray);
 }
-.u-outcome-font {
+.u-expense-font {
   color: var(--color-red);
 }
 .u-income-font {
@@ -399,11 +399,11 @@ img {
     gap: var(--gap-large);
   }
 
-  .loan__details div{
+  .loan__details div {
     flex: 1;
   }
 
-  .loan__range{
+  .loan__range {
     width: 70%;
   }
 }

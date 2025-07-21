@@ -72,5 +72,5 @@ export const homePage = () => {
     linkPage("#feature-loan", loanPage);
     linkPage("#feature-transaction", transactionPage);
     linkPage("#feature-bill", billPage);
-  }, 1500);
+  }, 800);
 };

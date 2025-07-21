@@ -4,12 +4,14 @@ import { ChevronIcon } from "../icons/general/ChevronIcon";
 type SelectInputType = {
   id: string;
   options: { value: string; text: string }[];
+  name: string;
   placeholder?: string;
 };
 
 export const SelectInput = ({
   id,
   options,
+  name,
   placeholder = "Select an option",
 }: SelectInputType): string => {
   const optionsHTML = options
@@ -19,7 +21,7 @@ export const SelectInput = ({
   return `
         <div class="input-group u-flex select-wrapper">
             <label for="${id}"></label>
-            <select id="${id}" required>
+            <select id="${id}" name=${name} required>
                 <option value="" disabled selected>${placeholder}</option>
                 ${optionsHTML}
             </select>

@@ -1,8 +1,12 @@
 import { Button } from "../components/button/Button";
-import { TextInput } from "../components/inputs/TextInput";
+import { Input } from "../components/inputs/Input";
 import { Navbar } from "../components/nav/Navbar";
-import { linkPage } from "../utils/linkPages";
 import { SelectInput } from "../components/inputs/SelectInput";
+import { linkPage } from "../utils/linkPages";
+import { payBills } from "../app/payBill";
+
+import { categories } from "../app/data";
+import { loadEvents } from "../app/loadEvents";
 
 import { loginPage } from "./loginPage";
 import { homePage } from "./homePage";
@@ -15,21 +19,18 @@ export const billPage = () => {
                 ${Navbar(true)}
                 <main class="main signup__main u-width-100"> 
                     <h2 class="u-text-bold u-primary-title u-text-center">Pay Bill</h2>
-                    <form class="form signup-form u-white-box u-width-100 u-gap-large">
+                    <form id="form-pay-bill" class="form u-white-box u-width-100 u-gap-large">
                         <div class="inputs-box">
                             ${SelectInput({
                               id: "select-bill",
-                              options: [
-                                { value: "electricity", text: "Electricity" },
-                                { value: "water", text: "Water" },
-                                { value: "internet", text: "Internet" },
-                                { value: "gas", text: "Gas" },
-                              ],
+                              options: categories,
+                              name: "category",
                               placeholder: "Select a category",
                             })}
-                            ${TextInput({
+                            ${Input({
                               type: "number",
-                              id: "password",
+                              id: "amount",
+                              name: "amount",
                               placeholder: "How much have you spent?",
                             })}  
                         </div>
@@ -44,7 +45,8 @@ export const billPage = () => {
                     </form>
                 </main>
             </section> `;
-  linkPage("#btn-pay-bill", homePage);
   linkPage("#btn-logout", loginPage);
   linkPage("#btn-home", homePage);
+
+  loadEvents("#form-pay-bill", "submit", payBills);
 };

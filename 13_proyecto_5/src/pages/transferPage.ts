@@ -4,9 +4,26 @@ import { SelectInput } from "../components/inputs/SelectInput";
 import { linkPage } from "../utils/linkPages";
 import { homePage } from "./homePage";
 import { loginPage } from "./loginPage";
+import { users, state } from "../app/data";
+import { loadEvents } from "../app/loadEvents";
+import { transferMoney } from "../app/transferMoney";
+import { getTransactionTotals } from "../utils/getTransactionTotals";
+import { getCurrencySymbol } from "../utils/getCurrencySymbol";
 
 export const transferPage = () => {
   const app = document.querySelector<HTMLDivElement>("#app");
+
+  const currentUser = state.currentUser!;
+  const { raw, formatted } = getTransactionTotals(currentUser.transactions);
+
+  const symbol = getCurrencySymbol(currentUser.currency, currentUser.location);
+
+  const selectOptions = users
+    .filter((user) => user.username !== currentUser?.username)
+    .map((user) => ({
+      value: user.username,
+      text: `${user.name} ${user.surname}`,
+    }));
 
   app!.innerHTML = `
             <section class="section transfer-page">
@@ -18,28 +35,29 @@ export const transferPage = () => {
                     <div class="user__avatar user__avatar--transferpage ">
                       <img  src="https://i.pravatar.cc/300"/>
                     </div>
-                    <p class="u-paragraph-xlarge u-text-bold ">Mario Rivera</p>
-                    <p class="u-paragraph-small u-gray-font">4763 **** **** 0078</p>    
+                    <p class="u-paragraph-xlarge u-text-bold ">${
+                      currentUser.name
+                    } ${currentUser.surname}</p>
+                    <p class="u-paragraph-small u-gray-font">${
+                      formatted.balance
+                    }</p>    
                   </div>
                 </div>
                
                     
-                <form class="form login-form u-white-box u-width-100 u-gap-small">
+                <form id="form-transfer-money" class="form login-form u-white-box u-width-100 u-gap-small">
                   <div class="transfer__amount">
                     <div class="transfer__input-group">
-                      <label class="u-secondary-title u-text-bold" for="amount">€</label>
-                      <input type="number" class="input__amount" placeholder="_____" max="9999" required/>
+                      <label class="u-secondary-title u-text-bold" for="amount">${symbol}</label>
+                      <input type="number" id="amount" name="amount" class="input__amount" placeholder="_____" max="9999" required/>
                     </div>
                     <p class="u-paragraph-small u-gray-font">no fee</p>
                   </div>
                   <div class="inputs-box">
                     ${SelectInput({
                       id: "country",
-                      options: [
-                        { value: "2222", text: "Ana Fernadez" },
-                        { value: "3333", text: "Steve Print" },
-                        { value: "4444", text: "Peter Parker" },
-                      ],
+                      options: selectOptions,
+                      name: "destination",
                       placeholder: "Select Destination Account",
                     })}
                   </div>
@@ -56,7 +74,8 @@ export const transferPage = () => {
           </section>
             `;
 
-  linkPage("#btn-transfer", homePage);
   linkPage("#btn-logout", loginPage);
   linkPage("#btn-home", homePage);
+
+  loadEvents("#form-transfer-money", "submit", transferMoney);
 };

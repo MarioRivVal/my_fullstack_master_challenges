@@ -1,6 +1,6 @@
 import { LoginIcon } from "../components/icons/large/LoginIcon";
 import { Button } from "../components/button/Button";
-import { TextInput } from "../components/inputs/TextInput";
+import { Input } from "../components/inputs/Input";
 import { linkPage } from "../utils/linkPages";
 import { infoPage } from "./infoPage";
 import { homePage } from "./homePage";
@@ -26,14 +26,14 @@ export const loginPage = () => {
             </div>
             <form id="login-form" class="form login-form u-white-box u-width-100 u-gap-large">
               <div class="inputs-box">
-                ${TextInput({
+                ${Input({
                   type: "text",
                   id: "username",
                   name: "username",
                   placeholder: "Username",
                   value: "mario",
                 })}
-                ${TextInput({
+                ${Input({
                   type: "password",
                   id: "password",
                   name: "password",

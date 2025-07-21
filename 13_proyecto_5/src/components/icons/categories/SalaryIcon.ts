@@ -1,6 +1,6 @@
 import "../icons.css";
 
-export const OthersIcon = (): string => `
+export const SalaryIcon = (): string => `
       <svg
         viewBox="0 0 40 40"
         fill="none"
