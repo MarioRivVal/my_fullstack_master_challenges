@@ -232,11 +232,21 @@ img {
   align-items: center;
 }
 
+.loan-form .btn-box {
+  flex-direction: row;
+}
+
+#btn-calculate-loan,
+#btn-apply-loan {
+  width: 100%;
+}
+
 .loan__btn-box {
   display: flex;
   justify-content: space-around;
 }
 
+.loan__symbol,
 .loan__amount {
   font-size: 2.8rem;
   font-weight: 600;

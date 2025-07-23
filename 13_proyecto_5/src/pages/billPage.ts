@@ -6,7 +6,7 @@ import { linkPage } from "../utils/linkPages";
 import { payBills } from "../app/payBill";
 
 import { categories } from "../app/data";
-import { loadEvents } from "../app/loadEvents";
+import { loadEvents } from "../utils/loadEvents";
 
 import { loginPage } from "./loginPage";
 import { homePage } from "./homePage";

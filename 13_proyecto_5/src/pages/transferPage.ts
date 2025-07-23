@@ -5,7 +5,7 @@ import { linkPage } from "../utils/linkPages";
 import { homePage } from "./homePage";
 import { loginPage } from "./loginPage";
 import { users, state } from "../app/data";
-import { loadEvents } from "../app/loadEvents";
+import { loadEvents } from "../utils/loadEvents";
 import { transferMoney } from "../app/transferMoney";
 import { getTransactionTotals } from "../utils/getTransactionTotals";
 import { getCurrencySymbol } from "../utils/getCurrencySymbol";

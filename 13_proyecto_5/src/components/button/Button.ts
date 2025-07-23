@@ -6,6 +6,7 @@ export type ButtonType = {
   type: "button" | "submit" | "reset";
   className?: string;
   icon?: string;
+  disabled?: boolean;
 };
 
 export const Button = ({
@@ -13,9 +14,14 @@ export const Button = ({
   text,
   type,
   className,
-  icon
+  icon,
+  disabled,
 }: ButtonType): string => {
   return `
-        <button type="${type}" id="${id}" class="btn ${className}">${icon}${text}</button>
+        <button type="${type}" id="${id}" class="btn ${className} ${
+    disabled ? "btn-disabled" : ""
+  }" ${disabled ? "disabled" : ""}>${icon}${
+    disabled ? "Disabled" : text
+  }</button>
     `;
 };

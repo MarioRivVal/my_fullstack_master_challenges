@@ -6,7 +6,7 @@ import { infoPage } from "./infoPage";
 import { homePage } from "./homePage";
 import { signupPage } from "./signupPage";
 
-import { loadEvents } from "../app/loadEvents";
+import { loadEvents } from "../utils/loadEvents";
 import { login } from "../app/login";
 
 // import { AlertIcon } from "../components/icons/large/AlertIcon";

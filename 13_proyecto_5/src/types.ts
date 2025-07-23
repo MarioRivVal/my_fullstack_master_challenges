@@ -27,4 +27,10 @@ type CategoryOption = {
   text: string;
 };
 
-export type { Transaction, User, AuthState, CategoryOption };
+type LoanResult = {
+  months?: number;
+  totalToPay: number;
+  monthlyFee: number;
+};
+
+export type { Transaction, User, AuthState, CategoryOption, LoanResult };
