@@ -20,9 +20,15 @@ export const signupPage = () => {
                         <div class="inputs-box">
                             ${Input({
                               type: "text",
-                              id: "username",
-                              name: "username",
-                              placeholder: "Username",
+                              id: "name",
+                              name: "name",
+                              placeholder: "Your name",
+                            })}
+                            ${Input({
+                              type: "text",
+                              id: "surname",
+                              name: "surname",
+                              placeholder: "Your surname",
                             })}
                             ${Input({
                               type: "number",

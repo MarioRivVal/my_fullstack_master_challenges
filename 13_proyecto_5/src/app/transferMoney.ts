@@ -16,7 +16,6 @@ export const transferMoney = async (e: Event) => {
   const destination = formData.get("destination") as string;
 
   const destinationUser = users.find((user) => user.username === destination);
-  console.log(destinationUser);
 
   if (amount > raw.balance) {
     messagePage(
@@ -46,7 +45,7 @@ export const transferMoney = async (e: Event) => {
 
     // Ingresa dinero al recibidor.
     destinationUser!.transactions.unshift({
-      category: "transfer",
+      category: "Transfer",
       type: "income",
       date: new Date().toISOString(),
       amount: convertedAmount,

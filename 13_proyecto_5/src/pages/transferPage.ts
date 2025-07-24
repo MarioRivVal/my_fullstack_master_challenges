@@ -14,7 +14,7 @@ export const transferPage = () => {
   const app = document.querySelector<HTMLDivElement>("#app");
 
   const currentUser = state.currentUser!;
-  const { raw, formatted } = getTransactionTotals(currentUser.transactions);
+  const { formatted } = getTransactionTotals(currentUser.transactions);
 
   const symbol = getCurrencySymbol(currentUser.currency, currentUser.location);
 

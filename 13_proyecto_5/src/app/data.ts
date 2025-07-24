@@ -168,6 +168,19 @@ const users: User[] = [
       },
     ],
   },
+  {
+    username: "test",
+    password: "0000",
+    name: "Test",
+    surname: "tester",
+    creditCardNum: "9823 7722 0055 0078",
+    cvv: "988",
+    expireData: "8/28",
+    currency: "USD",
+    location: "en-US",
+
+    transactions: [],
+  },
 ];
 
 const state: AuthState = {

@@ -31,6 +31,7 @@ type LoanResult = {
   months?: number;
   totalToPay: number;
   monthlyFee: number;
+  loanAmount: number;
 };
 
 export type { Transaction, User, AuthState, CategoryOption, LoanResult };

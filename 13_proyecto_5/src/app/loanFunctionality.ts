@@ -2,6 +2,7 @@ import { User } from "../types";
 import { calculateLoan } from "../utils/calculateLoan";
 import { LoanResult } from "../types";
 
+let loanAmount: number;
 let loanMonths: number;
 let loanTotalToPay: number;
 let loanMonthFee: number;
@@ -40,28 +41,28 @@ export const loanFunctionality = (currentUser: User, symbol: string) => {
   const MIN = Number(rangeInputEl.min);
   const MAX = Number(rangeInputEl.max);
 
-  let amount = Number(rangeInputEl.value);
+  loanAmount = Number(rangeInputEl.value);
 
   const renderAmount = () => {
-    amountEl.textContent = amount.toLocaleString(currentUser.location);
-    rangeInputEl.value = String(amount);
+    amountEl.textContent = loanAmount.toLocaleString(currentUser.location);
+    rangeInputEl.value = String(loanAmount);
     applyBtnEl.disabled = true;
     applyBtnEl.textContent = "Disabled";
     applyBtnEl.classList.add("btn-disabled");
   };
 
   minusBtn.addEventListener("click", () => {
-    amount = Math.max(MIN, amount - STEP);
+    loanAmount = Math.max(MIN, loanAmount - STEP);
     renderAmount();
   });
 
   plusBtn.addEventListener("click", () => {
-    amount = Math.min(MAX, amount + STEP);
+    loanAmount = Math.min(MAX, loanAmount + STEP);
     renderAmount();
   });
 
   rangeInputEl.addEventListener("input", (e) => {
-    amount = Number((e.target as HTMLInputElement).value);
+    loanAmount = Number((e.target as HTMLInputElement).value);
     renderAmount();
   });
 
@@ -69,7 +70,7 @@ export const loanFunctionality = (currentUser: User, symbol: string) => {
     const months = loanTermSelect.value;
     if (!months) return;
 
-    const { totalToPay, monthlyFee } = calculateLoan(amount, +months);
+    const { totalToPay, monthlyFee } = calculateLoan(loanAmount, +months);
 
     loanMonths = +months;
     loanTotalToPay = totalToPay;
@@ -92,5 +93,6 @@ export const getLoanDetails = (): LoanResult => {
     months: loanMonths,
     totalToPay: loanTotalToPay,
     monthlyFee: loanMonthFee,
+    loanAmount,
   };
 };
