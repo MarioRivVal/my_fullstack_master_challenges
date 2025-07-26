@@ -7,6 +7,7 @@ import { payBills } from "../app/payBill";
 
 import { categories } from "../app/data";
 import { loadEvents } from "../utils/loadEvents";
+import { logout } from "../app/logout";
 
 import { loginPage } from "./loginPage";
 import { homePage } from "./homePage";
@@ -48,5 +49,6 @@ export const billPage = () => {
   linkPage("#btn-logout", loginPage);
   linkPage("#btn-home", homePage);
 
+  loadEvents("#btn-logout", "click", logout);
   loadEvents("#form-pay-bill", "submit", payBills);
 };

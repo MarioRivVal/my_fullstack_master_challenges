@@ -1,6 +1,6 @@
 import { state } from "./data";
 import { getCurrencySymbol } from "../utils/getCurrencySymbol";
-import { getLoanDetails } from "./loanFunctionality";
+import { getLoanDetails } from "../services/loanServices";
 import { messagePage } from "../pages/messagePage";
 import { transactionPage } from "../pages/transactionPage";
 

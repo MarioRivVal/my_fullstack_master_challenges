@@ -7,9 +7,10 @@ import { ListDetails } from "../components/list-details/ListDetails";
 import { homePage } from "./homePage";
 import { loginPage } from "./loginPage";
 import { state } from "../app/data";
-import { loanFunctionality } from "../app/loanFunctionality";
+import { loanFunctionality } from "../services/loanServices";
 import { applyLoan } from "../app/applyLoan";
 import { loadEvents } from "../utils/loadEvents";
+import { logout } from "../app/logout";
 
 const list = {
   names: ["Months", "Total to pay", "Monthly fee"],
@@ -82,6 +83,7 @@ export const loanPage = () => {
 
   loanFunctionality(currentUser, symbol);
   loadEvents("#form-apply-loan", "submit", applyLoan);
+  loadEvents("#btn-logout", "click", logout);
 
   linkPage("#btn-home", homePage);
   linkPage("#btn-logout", loginPage);

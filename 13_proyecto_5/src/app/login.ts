@@ -22,10 +22,7 @@ export const login = (e: Event) => {
       state.currentUser = null;
     } else {
       state.currentUser = foundUser;
-      console.log("login");
       homePage();
     }
-
-    console.log(state.currentUser);
   }
 };

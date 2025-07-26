@@ -2,7 +2,7 @@ import { User, AuthState, CategoryOption } from "../types";
 
 const users: User[] = [
   {
-    username: "mario",
+    username: "mari",
     password: "1111",
     name: "Mario",
     surname: "Rivera",
@@ -58,7 +58,7 @@ const users: User[] = [
     ],
   },
   {
-    username: "ana",
+    username: "anfe",
     password: "2222",
     name: "Ana",
     surname: "Fernandez",
@@ -113,9 +113,9 @@ const users: User[] = [
     ],
   },
   {
-    username: "steve",
+    username: "luwr",
     password: "3333",
-    name: "Steve",
+    name: "Luis",
     surname: "Wrangler",
     creditCardNum: "9823 7722 0055 0078",
     cvv: "988",
@@ -167,19 +167,6 @@ const users: User[] = [
         amount: -25,
       },
     ],
-  },
-  {
-    username: "test",
-    password: "0000",
-    name: "Test",
-    surname: "tester",
-    creditCardNum: "9823 7722 0055 0078",
-    cvv: "988",
-    expireData: "8/28",
-    currency: "USD",
-    location: "en-US",
-
-    transactions: [],
   },
 ];
 

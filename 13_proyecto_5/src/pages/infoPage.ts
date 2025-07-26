@@ -1,9 +1,19 @@
 import { linkPage } from "../utils/linkPages";
 import { loginPage } from "./loginPage";
-// import { ListDetails } from "../components/list-details/ListDetails";
+import { users } from "../app/data";
 
 export const infoPage = () => {
   const app = document.querySelector<HTMLDivElement>("#app");
+
+  const usernames = users
+    .map((user) => user.username)
+    .map((item) => `<li>${item}</li>`)
+    .join("");
+  const passwords = users
+    .map((user) => user.password)
+    .map((item) => `<li>${item}</li>`)
+    .join("");
+
   app!.innerHTML = `
                 <section class="section info-page">
                     <h2 class="u-text-bold u-secondary-title u-blue-font u-text-center">Info Page</h2>
@@ -11,15 +21,11 @@ export const infoPage = () => {
                     <div class="list-users u-text-center u-width-100">
                         <ul class="u-paragraph-large">
                             <li class="u-blue-font">Username</li>
-                            <li>mario</li>
-                            <li>ana</li>
-                            <li>steve</li>
+                            ${usernames}
                         </ul>
                         <ul class=" u-paragraph-large">
                             <li class="u-blue-font">Password</li>
-                            <li>1111</li>
-                            <li>2222</li>
-                            <li>3333</li>
+                            ${passwords}
                         </ul>
                     </div>
                         <p class="u-paragraph-large u-text-center">You can create additional temporary users. Note that these accounts  will disappear when the page is refreshed.</p>

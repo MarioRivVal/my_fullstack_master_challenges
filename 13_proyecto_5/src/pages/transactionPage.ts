@@ -4,10 +4,12 @@ import { IncomeIcon } from "../components/icons/general/IncomeIcon";
 import { OutcomeIcon } from "../components/icons/general/OutcomeIcon";
 import { linkPage } from "../utils/linkPages";
 import { getTransactionTotals } from "../utils/getTransactionTotals";
-import { sortTransactions } from "../utils/sortTransactions";
 import { Transaction } from "../types";
 import { homePage } from "./homePage";
 import { loginPage } from "./loginPage";
+import { transactionFunctionality } from "../services/transactionServices";
+import { logout } from "../app/logout";
+import { loadEvents } from "../utils/loadEvents";
 
 import { state } from "../app/data";
 import { Loader } from "../components/loader/Loader";
@@ -23,9 +25,7 @@ export const transactionPage = () => {
     return transactions.map((tx) => TransactionItem(tx)).join("");
   };
 
-  Loader();
-  setTimeout(() => {
-    app!.innerHTML = `
+  app!.innerHTML = `
            <section class="section transaction-page"> 
                            ${Navbar(true)}
                            <main class="main transaction__main u-width-100">
@@ -75,20 +75,9 @@ export const transactionPage = () => {
                            </main>
                        </section> `;
 
-    linkPage("#btn-home", homePage);
-    linkPage("#btn-logout", loginPage);
+  transactionFunctionality(isSorted, transactions, renderTransactions);
+  loadEvents("#btn-logout", "click", logout);
 
-    const btnSort = document.getElementById("btn-sort");
-    const container = document.querySelector(".transaction__list");
-
-    btnSort?.addEventListener("click", () => {
-      const txsToRender = isSorted
-        ? [...transactions]
-        : sortTransactions(transactions);
-
-      container!.innerHTML = renderTransactions(txsToRender);
-      isSorted = !isSorted;
-      btnSort.textContent = isSorted ? "Unsort" : "Sort";
-    });
-  }, 500);
+  linkPage("#btn-home", homePage);
+  linkPage("#btn-logout", loginPage);
 };

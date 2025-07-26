@@ -1,10 +1,9 @@
-import { linkPage } from "../utils/linkPages";
-import { loginPage } from "./loginPage";
 import { UserPage } from "./userPage";
 import { transferPage } from "./transferPage";
-import { loanPage } from "./loanPage";
 import { transactionPage } from "./transactionPage";
+import { loanPage } from "./loanPage";
 import { billPage } from "./billPage";
+
 import { Navbar } from "../components/nav/Navbar";
 import { Feature } from "../components/feature/Feature";
 import { CreditCard } from "../components/credit-card/CreditCard";
@@ -15,7 +14,11 @@ import { LoanIcon } from "../components/icons/features/LoanIcon";
 import { TransactionIcon } from "../components/icons/features/TransactionIcon";
 import { BillIcon } from "../components/icons/features/BillIcon";
 
+import { loadEvents } from "../utils/loadEvents";
+import { linkPage } from "../utils/linkPages";
+
 import { state } from "../app/data";
+import { logout } from "../app/logout";
 
 export const homePage = () => {
   const app = document.querySelector<HTMLDivElement>("#app");
@@ -66,7 +69,8 @@ export const homePage = () => {
             </section>
             `;
 
-    linkPage("#btn-logout", loginPage);
+    loadEvents("#btn-logout", "click", logout);
+
     linkPage("#feature-user", UserPage);
     linkPage("#feature-transfer", transferPage);
     linkPage("#feature-loan", loanPage);

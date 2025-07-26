@@ -1,6 +1,5 @@
-import { User } from "../types";
+import { User, LoanResult } from "../types";
 import { calculateLoan } from "../utils/calculateLoan";
-import { LoanResult } from "../types";
 
 let loanAmount: number;
 let loanMonths: number;

@@ -5,10 +5,11 @@ import { linkPage } from "../utils/linkPages";
 import { homePage } from "./homePage";
 import { loginPage } from "./loginPage";
 import { users, state } from "../app/data";
-import { loadEvents } from "../utils/loadEvents";
 import { transferMoney } from "../app/transferMoney";
 import { getTransactionTotals } from "../utils/getTransactionTotals";
 import { getCurrencySymbol } from "../utils/getCurrencySymbol";
+import { logout } from "../app/logout";
+import { loadEvents } from "../utils/loadEvents";
 
 export const transferPage = () => {
   const app = document.querySelector<HTMLDivElement>("#app");
@@ -78,4 +79,5 @@ export const transferPage = () => {
   linkPage("#btn-home", homePage);
 
   loadEvents("#form-transfer-money", "submit", transferMoney);
+  loadEvents("#btn-logout", "click", logout);
 };

@@ -3,9 +3,11 @@ import { CreditCard } from "../components/credit-card/CreditCard";
 import { ListDetails } from "../components/list-details/ListDetails";
 import { linkPage } from "../utils/linkPages";
 import { loginPage } from "./loginPage";
+import { logout } from "../app/logout";
 import { homePage } from "./homePage";
 
 import { state } from "../app/data";
+import { loadEvents } from "../utils/loadEvents";
 
 export const UserPage = () => {
   const app = document.querySelector<HTMLDivElement>("#app");
@@ -39,6 +41,7 @@ export const UserPage = () => {
             </section>
             `;
 
+  loadEvents("#btn-logout", "click", logout);
   linkPage("#btn-logout", loginPage);
   linkPage("#btn-home", homePage);
 };

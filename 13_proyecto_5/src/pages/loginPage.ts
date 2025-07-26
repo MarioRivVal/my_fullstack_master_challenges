@@ -31,7 +31,7 @@ export const loginPage = () => {
                   id: "username",
                   name: "username",
                   placeholder: "Username",
-                  value: "mario",
+                  value: "mari",
                 })}
                 ${Input({
                   type: "password",
