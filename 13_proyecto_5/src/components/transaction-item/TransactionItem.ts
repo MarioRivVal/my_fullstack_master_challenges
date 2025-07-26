@@ -4,12 +4,7 @@ import { state } from "../../app/data";
 import { formatDate, formatCurrency } from "../../utils/formatters";
 import { getIcon } from "../../utils/getIcon";
 
-type TransactionItemType = {
-  category: string;
-  type: string;
-  date: string;
-  amount: number;
-};
+import { TransactionItemType } from "../../types";
 
 export const TransactionItem = ({
   category,

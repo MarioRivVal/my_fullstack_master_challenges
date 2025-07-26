@@ -1,8 +1,8 @@
 import { Button } from "../components/button/Button";
 import { AlertIcon } from "../components/icons/large/AlertIcon";
 import { SuccessIcon } from "../components/icons/large/SuccessIcon";
-import { linkPage } from "../utils/linkPages";
 import { Loader } from "../components/loader/Loader";
+import { linkPage } from "../utils/linkPages";
 
 export const messagePage = (
   type: string,

@@ -1,6 +1,7 @@
 import { linkPage } from "../utils/linkPages";
 import { loginPage } from "./loginPage";
 import { users } from "../app/data";
+import { Button } from "../components/button/Button";
 
 export const infoPage = () => {
   const app = document.querySelector<HTMLDivElement>("#app");
@@ -29,8 +30,15 @@ export const infoPage = () => {
                         </ul>
                     </div>
                         <p class="u-paragraph-large u-text-center">You can create additional temporary users. Note that these accounts  will disappear when the page is refreshed.</p>
-                        <p class="u-paragraph-large u-text-center">This app is a simulation for testing purposes; no real data is stored, and all transactions are temporary.</p>
-                        <button id="btn-close-info" class="btn btn-info">X</buttonid=class=>
+                        <p class="u-paragraph-large u-text-center">This app is a simulation for testing purposes; no real data is stored, and all transactions are temporary.
+                        </p>
+                       ${Button({
+                         id: "btn-close-info",
+                         text: "Close",
+                         type: "button",
+                         icon: "",
+                       })} 
+                       
             </section>
             `;
 

@@ -1,12 +1,5 @@
 import "./input.css";
-
-type InputType = {
-  type: string;
-  id: string;
-  name: string;
-  placeholder: string;
-  value?: string;
-};
+import { InputType } from "../../types";
 
 export const Input = ({
   type,

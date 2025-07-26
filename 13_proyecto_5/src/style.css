@@ -252,7 +252,6 @@ img {
   font-weight: 600;
 }
 
-/* ----------------------------------------------- */
 /* UTILITIES */
 
 .u-width-100 {
@@ -337,6 +336,10 @@ img {
   box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.07);
 }
 
+/* ----------------------------------- */
+/* --------- MEDIA QUERIES ----------- */
+/* ----------------------------------- */
+
 @media (min-width: 480px) {
   html {
     font-size: 62.5%;
@@ -409,11 +412,19 @@ img {
     gap: var(--gap-large);
   }
 
-  .loan__details div {
-    flex: 1;
+  .loan__details .loan__summary {
+    width: 100%;
+  }
+
+  .main.loan__main {
+    align-items: start;
+  }
+
+  .main.loan__main .loan__btn-box {
+    width: 70%;
   }
 
   .loan__range {
-    width: 70%;
+    width: 50%;
   }
 }

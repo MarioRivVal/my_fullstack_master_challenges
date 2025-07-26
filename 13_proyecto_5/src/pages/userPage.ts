@@ -2,7 +2,6 @@ import { Navbar } from "../components/nav/Navbar";
 import { CreditCard } from "../components/credit-card/CreditCard";
 import { ListDetails } from "../components/list-details/ListDetails";
 import { linkPage } from "../utils/linkPages";
-import { loginPage } from "./loginPage";
 import { logout } from "../app/logout";
 import { homePage } from "./homePage";
 
@@ -42,6 +41,5 @@ export const UserPage = () => {
             `;
 
   loadEvents("#btn-logout", "click", logout);
-  linkPage("#btn-logout", loginPage);
   linkPage("#btn-home", homePage);
 };

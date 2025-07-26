@@ -1,10 +1,6 @@
-type FeatureType = {
-  id: string;
-  icon: () => string;
-  text: string;
-};
+import { FeatureType } from "../../types";
 
-export const Feature = ({ id, icon,text }: FeatureType) => `
+export const Feature = ({ id, icon, text }: FeatureType) => `
     <div id="${id}" class="home__features-item">
         <div class="medium-icon-box">
             ${icon()}

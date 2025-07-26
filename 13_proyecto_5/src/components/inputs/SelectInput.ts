@@ -1,12 +1,6 @@
 import "./input.css";
 import { ChevronIcon } from "../icons/general/ChevronIcon";
-
-type SelectInputType = {
-  id: string;
-  options: { value: string; text: string }[];
-  name: string;
-  placeholder?: string;
-};
+import { SelectInputType } from "../../types";
 
 export const SelectInput = ({
   id,

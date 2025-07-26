@@ -1,9 +1,5 @@
 import "./listDetails.css";
-
-type ListDetailsType = {
-  names: string[];
-  values: string[];
-};
+import { ListDetailsType } from "../../types";
 
 export const ListDetails = ({ names, values }: ListDetailsType): string => {
   const nameItems = names

@@ -4,15 +4,13 @@ import { IncomeIcon } from "../components/icons/general/IncomeIcon";
 import { OutcomeIcon } from "../components/icons/general/OutcomeIcon";
 import { linkPage } from "../utils/linkPages";
 import { getTransactionTotals } from "../utils/getTransactionTotals";
+import { loadEvents } from "../utils/loadEvents";
 import { Transaction } from "../types";
 import { homePage } from "./homePage";
-import { loginPage } from "./loginPage";
 import { transactionFunctionality } from "../services/transactionServices";
 import { logout } from "../app/logout";
-import { loadEvents } from "../utils/loadEvents";
 
 import { state } from "../app/data";
-import { Loader } from "../components/loader/Loader";
 
 export const transactionPage = () => {
   const app = document.querySelector<HTMLDivElement>("#app");
@@ -79,5 +77,4 @@ export const transactionPage = () => {
   loadEvents("#btn-logout", "click", logout);
 
   linkPage("#btn-home", homePage);
-  linkPage("#btn-logout", loginPage);
 };

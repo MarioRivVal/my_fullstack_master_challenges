@@ -2,8 +2,8 @@ import { Input } from "../components/inputs/Input";
 import { Navbar } from "../components/nav/Navbar";
 import { Button } from "../components/button/Button";
 import { linkPage } from "../utils/linkPages";
-import { loginPage } from "./loginPage";
 import { loadEvents } from "../utils/loadEvents";
+import { loginPage } from "./loginPage";
 import { signup } from "../app/signup";
 
 export const signupPage = () => {

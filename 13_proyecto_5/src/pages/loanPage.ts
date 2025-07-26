@@ -1,15 +1,14 @@
 import { linkPage } from "../utils/linkPages";
 import { getCurrencySymbol } from "../utils/getCurrencySymbol";
+import { loadEvents } from "../utils/loadEvents";
 import { Navbar } from "../components/nav/Navbar";
 import { SelectInput } from "../components/inputs/SelectInput";
 import { Button } from "../components/button/Button";
 import { ListDetails } from "../components/list-details/ListDetails";
 import { homePage } from "./homePage";
-import { loginPage } from "./loginPage";
-import { state } from "../app/data";
 import { loanFunctionality } from "../services/loanServices";
+import { state } from "../app/data";
 import { applyLoan } from "../app/applyLoan";
-import { loadEvents } from "../utils/loadEvents";
 import { logout } from "../app/logout";
 
 const list = {
@@ -68,7 +67,7 @@ export const loanPage = () => {
                                     })}
                                 </div>
                             </form>
-                            <div>
+                            <div class="loan__summary">
                                 <p class="u-paragraph-large u-text-bold u-mb-medium ">Payment summary</p>
                                 <div id="loan__list" class="u-white-box u-width-100 u-gap-small">
                                     ${ListDetails(list)}
@@ -86,5 +85,4 @@ export const loanPage = () => {
   loadEvents("#btn-logout", "click", logout);
 
   linkPage("#btn-home", homePage);
-  linkPage("#btn-logout", loginPage);
 };

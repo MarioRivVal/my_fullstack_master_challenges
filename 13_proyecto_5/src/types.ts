@@ -31,7 +31,51 @@ type LoanResult = {
   months?: number;
   totalToPay: number;
   monthlyFee: number;
-  loanAmount: number;
+  loanAmount?: number;
 };
 
-export type { Transaction, User, AuthState, CategoryOption, LoanResult };
+type FeatureType = {
+  id: string;
+  icon: () => string;
+  text: string;
+};
+
+type InputType = {
+  type: string;
+  id: string;
+  name: string;
+  placeholder: string;
+  value?: string;
+};
+
+type SelectInputType = {
+  id: string;
+  options: { value: string; text: string }[];
+  name: string;
+  placeholder?: string;
+};
+
+type ListDetailsType = {
+  names: string[];
+  values: string[];
+};
+
+type TransactionItemType = {
+  category: string;
+  type: string;
+  date: string;
+  amount: number;
+};
+
+export type {
+  Transaction,
+  User,
+  AuthState,
+  CategoryOption,
+  LoanResult,
+  FeatureType,
+  InputType,
+  SelectInputType,
+  ListDetailsType,
+  TransactionItemType,
+};

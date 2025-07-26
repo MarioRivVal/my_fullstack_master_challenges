@@ -2,14 +2,11 @@ import { LoginIcon } from "../components/icons/large/LoginIcon";
 import { Button } from "../components/button/Button";
 import { Input } from "../components/inputs/Input";
 import { linkPage } from "../utils/linkPages";
+import { loadEvents } from "../utils/loadEvents";
 import { infoPage } from "./infoPage";
-import { homePage } from "./homePage";
 import { signupPage } from "./signupPage";
 
-import { loadEvents } from "../utils/loadEvents";
 import { login } from "../app/login";
-
-// import { AlertIcon } from "../components/icons/large/AlertIcon";
 
 export const loginPage = () => {
   const app = document.querySelector<HTMLDivElement>("#app");
@@ -31,14 +28,12 @@ export const loginPage = () => {
                   id: "username",
                   name: "username",
                   placeholder: "Username",
-                  value: "mari",
                 })}
                 ${Input({
                   type: "password",
                   id: "password",
                   name: "password",
                   placeholder: "Password",
-                  value: "1111",
                 })} 
               </div>
               <div class="btn-box">

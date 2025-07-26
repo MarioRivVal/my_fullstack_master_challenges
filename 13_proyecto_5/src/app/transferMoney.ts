@@ -37,7 +37,7 @@ export const transferMoney = async (e: Event) => {
 
     // Quita dinero del usuario actual
     currentUser.transactions.unshift({
-      category: "transfer",
+      category: "Transfer",
       type: "expense",
       date: new Date().toISOString(),
       amount: -Math.abs(amount),

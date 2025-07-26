@@ -1,14 +1,13 @@
 import { Navbar } from "../components/nav/Navbar";
 import { Button } from "../components/button/Button";
 import { SelectInput } from "../components/inputs/SelectInput";
-import { linkPage } from "../utils/linkPages";
 import { homePage } from "./homePage";
-import { loginPage } from "./loginPage";
 import { users, state } from "../app/data";
 import { transferMoney } from "../app/transferMoney";
+import { logout } from "../app/logout";
+import { linkPage } from "../utils/linkPages";
 import { getTransactionTotals } from "../utils/getTransactionTotals";
 import { getCurrencySymbol } from "../utils/getCurrencySymbol";
-import { logout } from "../app/logout";
 import { loadEvents } from "../utils/loadEvents";
 
 export const transferPage = () => {
@@ -75,7 +74,6 @@ export const transferPage = () => {
           </section>
             `;
 
-  linkPage("#btn-logout", loginPage);
   linkPage("#btn-home", homePage);
 
   loadEvents("#form-transfer-money", "submit", transferMoney);

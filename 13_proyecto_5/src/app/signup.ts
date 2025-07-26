@@ -1,6 +1,5 @@
 import { messagePage } from "../pages/messagePage";
 import { signupPage } from "../pages/signupPage";
-import { loginPage } from "../pages/loginPage";
 import { infoPage } from "../pages/infoPage";
 import { getUserLocale, getUserCurrency } from "../utils/userLocation";
 import {

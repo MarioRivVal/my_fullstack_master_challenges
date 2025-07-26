@@ -3,13 +3,10 @@ import { Input } from "../components/inputs/Input";
 import { Navbar } from "../components/nav/Navbar";
 import { SelectInput } from "../components/inputs/SelectInput";
 import { linkPage } from "../utils/linkPages";
-import { payBills } from "../app/payBill";
-
-import { categories } from "../app/data";
 import { loadEvents } from "../utils/loadEvents";
+import { payBills } from "../app/payBill";
+import { categories } from "../app/data";
 import { logout } from "../app/logout";
-
-import { loginPage } from "./loginPage";
 import { homePage } from "./homePage";
 
 export const billPage = () => {
@@ -46,7 +43,6 @@ export const billPage = () => {
                     </form>
                 </main>
             </section> `;
-  linkPage("#btn-logout", loginPage);
   linkPage("#btn-home", homePage);
 
   loadEvents("#btn-logout", "click", logout);
