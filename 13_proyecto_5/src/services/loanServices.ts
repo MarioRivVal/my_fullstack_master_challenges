@@ -1,7 +1,7 @@
 import { User, LoanResult } from "../types";
 import { calculateLoan } from "../utils/calculateLoan";
 
-let loanAmount: number;
+let loanAmount = 0;
 let loanMonths: number;
 let loanTotalToPay: number;
 let loanMonthFee: number;
@@ -63,6 +63,12 @@ export const loanFunctionality = (currentUser: User, symbol: string) => {
   rangeInputEl.addEventListener("input", (e) => {
     loanAmount = Number((e.target as HTMLInputElement).value);
     renderAmount();
+  });
+
+  loanTermSelect.addEventListener("change", () => {
+    applyBtnEl.disabled = true;
+    applyBtnEl.textContent = "Disabled";
+    applyBtnEl.classList.add("btn-disabled");
   });
 
   btnCalculateLoan.addEventListener("click", () => {

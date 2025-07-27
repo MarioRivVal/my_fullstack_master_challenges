@@ -25,7 +25,6 @@ export const signup = (e: Event) => {
   }
 
   const username = generateUsername(name, surname);
-  console.log(username);
 
   users.push({
     username,
@@ -37,7 +36,14 @@ export const signup = (e: Event) => {
     expireData: "7/30",
     currency: getUserCurrency(),
     location: getUserLocale(),
-    transactions: [],
+    transactions: [
+      {
+        category: "Loan",
+        type: "income",
+        date: new Date().toISOString(),
+        amount: 10000,
+      },
+    ],
   });
 
   messagePage(

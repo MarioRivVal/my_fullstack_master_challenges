@@ -13,7 +13,7 @@ export const applyLoan = () => {
     category: "Loan",
     type: "income",
     date: new Date().toISOString(),
-    amount: loanAmount,
+    amount: +loanAmount!,
   });
 
   messagePage(

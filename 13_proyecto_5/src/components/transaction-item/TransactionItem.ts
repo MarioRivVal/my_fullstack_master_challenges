@@ -4,14 +4,14 @@ import { state } from "../../app/data";
 import { formatDate, formatCurrency } from "../../utils/formatters";
 import { getIcon } from "../../utils/getIcon";
 
-import { TransactionItemType } from "../../types";
+import { Transaction } from "../../types";
 
 export const TransactionItem = ({
   category,
   type,
   date,
   amount,
-}: TransactionItemType): string => {
+}: Transaction): string => {
   const user = state.currentUser;
   const formattedDate = formatDate(date, user!.location);
   const formattedCurrency = formatCurrency(

@@ -33,8 +33,6 @@ export const transferMoney = async (e: Event) => {
           )
         : amount;
 
-    console.log(convertedAmount);
-
     // Quita dinero del usuario actual
     currentUser.transactions.unshift({
       category: "Transfer",

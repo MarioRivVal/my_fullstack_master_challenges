@@ -60,13 +60,6 @@ type ListDetailsType = {
   values: string[];
 };
 
-type TransactionItemType = {
-  category: string;
-  type: string;
-  date: string;
-  amount: number;
-};
-
 export type {
   Transaction,
   User,
@@ -77,5 +70,4 @@ export type {
   InputType,
   SelectInputType,
   ListDetailsType,
-  TransactionItemType,
 };
